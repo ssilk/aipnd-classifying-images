@@ -45,6 +45,9 @@ def get_pet_labels(image_dir):
     results_dict = {}
 
     for file in image_files:
+        if file.startswith('.'):
+            continue
+
         results_dict[file] = [' '.join(
             [word for word in file.lower().split('_') if word.isalpha()]
         )]
