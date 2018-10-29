@@ -1,0 +1,72 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = vgg 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 4 key-value pairs.
+Below are 4 of them:
+ 1 key:                   horse_01.jpg  label:                      horse
+ 2 key:                sawhorse_01.jpg  label:                   sawhorse
+ 3 key:               greyhound_01.jpg  label:                  greyhound
+ 4 key:               greyhound_02.jpg  label:                  greyhound
+
+     MATCH:
+
+ NOT A MATCH:
+
+                  horse_01.jpg: 
+Real:                      horse   Classifier:                         sorrel
+
+               sawhorse_01.jpg: 
+Real:                   sawhorse   Classifier:                         hammer
+
+              greyhound_01.jpg: 
+Real:                  greyhound   Classifier:                        whippet
+
+              greyhound_02.jpg: 
+Real:                  greyhound   Classifier:                        whippet
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+     MATCH:
+
+ NOT A MATCH:
+
+                  horse_01.jpg: 
+Real:                      horse   Classifier:                         sorrel  
+PetLabelDog: 0  ClassLabelDog: 0
+
+               sawhorse_01.jpg: 
+Real:                   sawhorse   Classifier:                         hammer  
+PetLabelDog: 0  ClassLabelDog: 0
+
+              greyhound_01.jpg: 
+Real:                  greyhound   Classifier:                        whippet  
+PetLabelDog: 1  ClassLabelDog: 1
+
+              greyhound_02.jpg: 
+Real:                  greyhound   Classifier:                        whippet  
+PetLabelDog: 1  ClassLabelDog: 1
+
+# Total Images 4 # Matches: 0 # NOT Matches: 4
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog:   1.0 Pct Corr NOTdog:   1.0  Pct Corr Breed:   0.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  4  N Dog Images:  2  N NotDog Images:  2 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
+CNN model used for classification: vgg
+Number of images: 4
+Number of "dog" images: 2
+Number of "not a dog" images: 2
+pct_match: 0.0
+pct_correct_dogs: 1.0
+pct_correct_breed: 0.0
+pct_correct_notdogs: 1.0
+Misclassified Breeds:
+	greyhound_01.jpg: whippet
+	greyhound_02.jpg: whippet
+
+** Total Elapsed Runtime: 0:0:1
